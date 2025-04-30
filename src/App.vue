@@ -1,30 +1,49 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+  import { RouterView } from 'vue-router'
+  </script>
 
-<template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <template>
+    <div class="app">
+      <nav class="navigation">
+        <router-link to="/">홈</router-link>
+        <router-link to="/about">소개</router-link>
+        <router-link to="/contact">연락하기</router-link>
+      </nav>
+   
+      <main>
+        <RouterView />
+      </main>
+    </div>
+  </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+  <style scoped>
+    .app {
+      border: 3px solid black;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .navigation {
+      border: 3px solid pink;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .navigation a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navigation a:hover {
+      color: #4CAF50;
+    }
+
+    .router-link-active {
+      color: #4CAF50 !important;
+    }
+  </style>
