@@ -8,6 +8,7 @@
         <router-link to="/">홈</router-link>
         <router-link to="/about">소개</router-link>
         <router-link to="/contact">연락하기</router-link>
+        <router-link to="/page">페이지</router-link>
       </nav>
    
       <main>

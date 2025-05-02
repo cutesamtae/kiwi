@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import AboutPage from '../views/AboutPage.vue'
 import ContactPage from '../views/ContactPage.vue'
+import Page from '../views/Page.vue'
 
 // 라우터 설정
 const router = createRouter({
@@ -23,6 +24,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: ContactPage
+    },
+    {
+      path: '/page',
+      name: 'page',
+      component: Page
     }
   ]
 })
