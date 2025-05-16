@@ -9,6 +9,7 @@
         <router-link to="/about">소개</router-link>
         <router-link to="/contact">연락하기</router-link>
         <router-link to="/page">페이지</router-link>
+        <router-link to="/list">블로그 목록</router-link>
       </nav>
    
       <main>
