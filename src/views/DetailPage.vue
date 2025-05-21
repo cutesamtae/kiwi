@@ -4,12 +4,10 @@
 </script>
 
 <template>
-    I'm Detail Page
-    {{ $route.params.id }}
     <div>
-        <h2> {{ blog[ $route.params.id - 1 ].title }} </h2>
-        <p> {{ blog[ $route.params.id - 1 ].content }} </p>
-        <p> {{ blog[ $route.params.id - 1 ].date }} </p>
+        <h2> {{ post.title }} </h2>
+        <p> {{ post.content }} </p>
+        <p> {{ post.date }} </p>
         
     </div>
 </template>
