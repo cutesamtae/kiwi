@@ -3,18 +3,13 @@
     export default {
         name: 'DetailPage',
         data() {
-            return {
-                blog
-            }; // blog.js에서 가져온 데이터를 data 속성에 저장합니다.
-        },
-        created() {
-            const postId = this.$route.params.id;
-            this.post = blog.find((post) => post.id === parseInt(postId));
+            return { blog }; // blog.js에서 가져온 데이터를 data 속성에 저장합니다.
         },
     };
 </script>
 
 <template>
+    I'm Detail
     <div class="detail-page">
         <h2>{{ post.title }}</h2>
         <p>{{ post.content }}</p>

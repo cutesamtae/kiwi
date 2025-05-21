@@ -38,7 +38,7 @@ const router = createRouter({
       component: ListPage
     },
     {
-      path: '/detail',
+      path: '/detail/:id', // :id는 동적 세그먼트입니다
       name: 'detail',
       component: DetailPage
     }
