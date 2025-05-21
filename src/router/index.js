@@ -6,6 +6,7 @@ import AboutPage from '../views/AboutPage.vue'
 import ContactPage from '../views/ContactPage.vue'
 import Page from '../views/Page.vue'
 import ListPage from '../views/ListPage.vue'
+import DetailPage from '../views/DetailPage.vue'
 
 // 라우터 설정
 const router = createRouter({
@@ -35,6 +36,11 @@ const router = createRouter({
       path: '/list',
       name: 'list',
       component: ListPage
+    },
+    {
+      path: '/detail',
+      name: 'detail',
+      component: DetailPage
     }
   ]
 })
