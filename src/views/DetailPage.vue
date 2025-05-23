@@ -1,13 +1,12 @@
-<script>
-    const props = defineProps(['blog', 'id']);
-    const post = props.blog[parseInt(props.id) - 1];
+<script setup>
+    const {aaa} = defineProps(['aaa']);
 </script>
 
 <template>
     <div>
-        <h2> {{ post.title }} </h2>
-        <p> {{ post.content }} </p>
-        <p> {{ post.date }} </p>
+        <h2> {{ aaa.title }} </h2>
+        <p> {{ aaa.content }} </p>
+        <p> {{ aaa.date }} </p>
         
     </div>
 </template>

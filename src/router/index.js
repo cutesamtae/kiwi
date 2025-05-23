@@ -40,7 +40,7 @@ const router = createRouter({
     {
       path: '/detail/:id', // :id는 동적 세그먼트입니다
       name: 'detail',
-      component: DetailPage
+      component: DetailPage,
       props: true // URL 파라미터를 props로 전달합니다
     }
   ]

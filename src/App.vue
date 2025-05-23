@@ -14,7 +14,7 @@ import router from './router';
       </nav>
    
       <main>
-        <RouterView />
+        <router-view />
       </main>
     </div>
   </template>
