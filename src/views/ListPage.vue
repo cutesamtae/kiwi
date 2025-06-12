@@ -25,7 +25,7 @@
             <span class="date">{{ blog[2].date }}</span>
         </div>
     </div>
-<DetailPage v-if="selectID" :aaa="blog[selectID-1]"/>
+<DetailPage v-if="selectID" :aaa="blog[selectID-2]"/>
 </template>
 
 <style scoped>.container {

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="detail">
         <h2> {{ aaa.title }} </h2>
         <p> {{ aaa.content }} </p>
         <p> {{ aaa.date }} </p>
