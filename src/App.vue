@@ -1,7 +1,8 @@
 <script setup>
   import { RouterView } from 'vue-router'
-import router from './router';
-  </script>
+  import blog from './views/blog.js';
+  import router from './router';
+</script>
 
   <template>
     <div class="app">
@@ -14,7 +15,7 @@ import router from './router';
       </nav>
    
       <main>
-        <router-view />
+        <router-view :aaa="blog"/>
       </main>
     </div>
   </template>

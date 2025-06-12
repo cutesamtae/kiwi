@@ -1,31 +1,20 @@
 <script setup>
-    import blog from './blog.js';
-    import DetailPage from './DetailPage.vue';
-    import {ref} from 'vue'; // vue.js에서 제공하는 ref 함수를 import합니다.
-    const selectID = ref(null);
+    const { aaa } = defineProps(['aaa']); // aaa는 blog.js에서 가져온 데이터
 </script>
 
 <template>
-    <div class="container">
-        <h2 class="title">블로그 목록</h2>
-        <div class="row" @click="selectID = 1">
-            <span class="title">글 제목</span>
-            <span class="date">작성일</span>
-        </div>
-        <div class="row" @click="selectID = 2">
-            <span class="title">{{ blog[0].title }}</span>
-            <span class="date">{{ blog[0].date }}</span>
-        </div>
-        <div class="row" @click="selectID = 3">
-            <span class="title">{{ blog[1].title }}</span>
-            <span class="date">{{ blog[1].date }}</span>
-        </div>
-        <div class="row" @click="selectID = 4">
-            <span class="title">{{ blog[2].title }}</span>
-            <span class="date">{{ blog[2].date }}</span>
-        </div>
+    <div class="row">
+        <router-link to="/detail/1">{{ blog[0].title }}</router-link>
+        <span class="date">{{ blog[0].date }}</span>
     </div>
-<DetailPage v-if="selectID" :aaa="blog[selectID-2]"/>
+    <div class="row">
+        <router-link to="/detail/1">{{ blog[1].title }}</router-link>
+        <span class="date">{{ blog[1].date }}</span>
+    </div>
+    <div class="row">
+        <router-link to="/detail/1">{{ blog[2].title }}</router-link>
+        <span class="date">{{ blog[2].date }}</span>
+    </div>
 </template>
 
 <style scoped>.container {
